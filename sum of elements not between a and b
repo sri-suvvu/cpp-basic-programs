@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int num,i,sum=0,n,m;
+    cin>>num;
+    int arr[num];
+    for(i=0;i<num;i++)
+    {
+        cin>>arr[i];
+    }
+    cin>>n>>m;
+    for(i=0;i<num;i++)
+    {
+        if(arr[i]>=n&&arr[i]<=m)
+        {
+        continue;
+		 }
+         else
+         {
+         sum=sum+arr[i];
+         }
+    }
+    cout<<sum;
+  
+    return 0;
+}
