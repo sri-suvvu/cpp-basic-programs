@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int num;
+	cin>>num;
+	int i,count=0,sum=0,avg=0;
+	int arr[num];
+		for(i=0;i<num;i++)
+	{
+	cin>>arr[i];	
+	}	
+	for(i=0;i<num;i++)
+	{
+		sum=sum+arr[i];
+    }
+    avg=avg+(sum/num);
+    for(i=0;i<num;i++){
+     if(arr[i]>=avg)
+      {
+      	count++;
+	  }
+}
+	cout<<count;
+}
