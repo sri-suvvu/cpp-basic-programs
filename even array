@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+int num,i,count=0;
+    cin>>num;
+    int arr[num];
+    for(i=0;i<num;i++)
+    {
+        cin>>arr[i];
+    }
+    for(i=0;i<num;i++)
+    {
+        if(arr[i]%2!=0)
+        {
+         count++;
+        }
+        else 
+        continue;
+    }
+    if(count)
+     cout<<"False";
+    else
+     cout<<"True";
+}
