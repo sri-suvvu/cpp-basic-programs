@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+int game(int n)
+{
+    int rev=0;
+    int num=n;
+    while(n)
+    {
+        int r=n%10;
+        rev=(rev*10)+r;
+        n=n/10;
+    }
+  
+  return rev;
+}
+int main()
+{
+    int n,count=0;
+    cin>>n;
+    int arr[n],i;
+    for(i=0;i<n;i++)
+     cin>>arr[i]; 
+    for(i=0;i<n;i++)
+     {
+      int s=game(arr[i]);
+       cout<<s<<" ";
+}
+}
