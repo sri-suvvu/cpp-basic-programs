@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+int fun(int n)
+{
+	int count=0;
+	if(n==0)
+	 count++;
+	else{
+	while(n!=0)
+	{
+	  count++;
+	  n=n/10;
+	}
+	}
+	return count;
+}
+
+int main()
+{
+	int num;
+	cin>>num;
+	int arr[num];
+	int i;
+	for(i=0;i<num;i++)
+	 cin>>arr[i];
+	for(i=0;i<num;i++)
+	{
+	  cout<<fun(arr[i])<<" "; 
+}	
+}
